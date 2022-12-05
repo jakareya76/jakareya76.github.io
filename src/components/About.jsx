@@ -32,7 +32,7 @@ const About = () => {
           </p>
 
           <a
-            href="https://www.fiverr.com/riiote?up_rollout=true"
+            href="https://www.fiverr.com/riiote"
             rel="noreferrer"
             target="_blank"
             className=" border border-[#08fdd8] px-10 py-4  my-5 text-[#08fdd8] font-mono tracking-widest rounded-[2px] duration-500 hover:bg-[#08fdd8] hover:text-zinc-900"
