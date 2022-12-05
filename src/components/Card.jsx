@@ -1,6 +1,6 @@
 const Card = ({ image, link, title }) => {
   return (
-    <div className="w-[250px] h-[170px] cursor-pointer relative">
+    <div className="w-[250px] h-[170px] cursor-pointer relative xl:w-[350px] xl:h-[240px]">
       <img src={image} alt="" className="w-full h-full object-cover" />
       <div className="card_hover_effect duration-200 flex items-center justify-center">
         <a

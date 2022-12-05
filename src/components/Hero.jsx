@@ -1,5 +1,3 @@
-import Button from "./Button";
-
 const Hero = () => {
   return (
     <div className="py-20 px-5 sm:py-10" id="hero">
@@ -28,7 +26,14 @@ const Hero = () => {
           &lt;/p&gt;
           <br />
         </span>
-        <Button>Contact me!</Button>
+        <button className="my-8">
+          <a
+            href="#contact"
+            className="px-8 py-4 border border-[#08fdd8]  text-[#08fdd8] font-mono tracking-widest rounded-[2px] duration-500 hover:bg-[#08fdd8] hover:text-zinc-900"
+          >
+            Contact me!
+          </a>
+        </button>
       </div>
     </div>
   );

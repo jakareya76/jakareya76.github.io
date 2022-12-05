@@ -9,8 +9,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full py-5 flex items-center justify-center">
-      <nav className="navbar w-[90%] h-[60px] flex items-center justify-between px-2 text-[#7c7c7c] font-semibold md:w-[80%] md:p-8">
+    <header className="w-full py-5 flex items-center justify-center px-6">
+      <nav className="navbar container mx-auto h-[65px] flex items-center justify-between px-6 text-[#7c7c7c] font-semibold md:h-[80px]">
         <div>
           <img src={Logo} alt="logo" className="w-[50px] object-cover" />
         </div>

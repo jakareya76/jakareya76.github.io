@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import TagCanvas from "tag-canvas";
 import { Skills } from "../Constants/data";
-import Button from "./Button";
 
 const About = () => {
   useEffect(() => {
@@ -12,13 +11,13 @@ const About = () => {
     });
   }, []);
   return (
-    <div id="about" className="py-20">
+    <div id="about" className="py-10">
       <div className="flex items-center justify-between flex-col gap-5 lg:flex-row">
         <div className="flex flex-col items-center justify-center px-1 md:items-start pb-10">
           <h1 className="text-5xl font-aurore text-white font-semibold">
             <span className="text-yellow-300">About</span> me!
           </h1>
-          <p className="text-[#aeaeb1] text-justify my-5 max-w-3xl md:text-left">
+          <p className="text-[#aeaeb1] text-justify my-5 max-w-2xl md:text-left">
             Hi, I'm Jakareya, Full Stack Web Developer. With Over 3 YEARS Of
             Experience. Since beginning my journey as a freelance Developer
             nearly 3 years ago, I've done remote work for agencies, consulted
@@ -32,9 +31,16 @@ const About = () => {
             React Js, Node Js, Express Js, MongoDB, And NextJs.
           </p>
 
-          <Button>Hire me!</Button>
+          <a
+            href="https://www.fiverr.com/riiote?up_rollout=true"
+            rel="noreferrer"
+            target="_blank"
+            className=" border border-[#08fdd8] px-10 py-4  my-5 text-[#08fdd8] font-mono tracking-widest rounded-[2px] duration-500 hover:bg-[#08fdd8] hover:text-zinc-900"
+          >
+            Hire me!
+          </a>
         </div>
-        <div className="">
+        <div className="flex">
           <div className="xl:w-[450px] xl:h-[450px] flex items-center justify-center">
             <div id="canvaContainer">
               <canvas
