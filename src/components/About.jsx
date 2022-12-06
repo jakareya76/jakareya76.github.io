@@ -1,8 +1,27 @@
 import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import TagCanvas from "tag-canvas";
 import { Skills } from "../Constants/data";
 
 const About = () => {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        transition: { duration: 0.5, delay: 0.4 },
+      });
+    } else {
+      animation.start({
+        opacity: 0,
+      });
+    }
+    // eslint-disable-next-line
+  }, [inView]);
+
   useEffect(() => {
     TagCanvas.Start("myCanva", "tagList", {
       initial: [0.4, -0.3],
@@ -11,9 +30,9 @@ const About = () => {
     });
   }, []);
   return (
-    <div id="about" className="py-10">
+    <motion.div id="about" className="my-20" ref={ref} animate={animation}>
       <div className="flex items-center justify-between flex-col gap-5 lg:flex-row">
-        <div className="flex flex-col items-center justify-center px-1 md:items-start pb-10">
+        <div className="flex flex-col items-center justify-center px-1 md:items-start">
           <h1 className="text-5xl font-aurore text-white font-semibold">
             <span className="text-yellow-300">About</span> me!
           </h1>
@@ -65,7 +84,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

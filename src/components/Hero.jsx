@@ -1,15 +1,27 @@
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <div className="py-20 px-5 sm:py-10" id="hero">
+    <motion.div
+      className="my-20 px-5"
+      id="hero"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.4 }}
+    >
       <div>
         <span className="tags text-xl ml-[-10px] text-zinc-500">
           &lt;h1&gt;
           <br />
         </span>
-        <h1 className="text-4xl text-white font-semibold md:text-6xl lg:text-7xl xl:text-8xl">
+        <motion.h1
+          className="text-4xl text-white font-semibold md:text-6xl lg:text-7xl xl:text-8xl"
+          initial={{ scale: 0.8 }}
+          animate={{ scale: 1, originX: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           Hi, <br /> I'm <span className="text-yellow-300">J</span>akareya
           <br /> web developer.
-        </h1>
+        </motion.h1>
         <span className="tags text-xl ml-[-10px] text-zinc-500">
           &lt;/h1&gt;
           <br />
@@ -35,7 +47,7 @@ const Hero = () => {
           </a>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

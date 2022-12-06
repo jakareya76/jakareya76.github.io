@@ -1,8 +1,13 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
 const Contact = () => {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,10 +31,26 @@ const Contact = () => {
       );
   };
 
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        transition: { duration: 0.5, delay: 0.4 },
+      });
+    } else {
+      animation.start({
+        opacity: 0,
+      });
+    }
+    // eslint-disable-next-line
+  }, [inView]);
+
   return (
-    <div
+    <motion.div
+      ref={ref}
       id="contact"
-      className="py-20 flex items-center justify-center flex-col"
+      className="flex items-center justify-center flex-col my-20"
+      animate={animation}
     >
       <h1 className="text-center text-4xl font-aurore text-white py-10">
         <span className="text-yellow-300">Contact</span> me!
@@ -72,7 +93,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

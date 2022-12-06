@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Logo from "../images/logo.png";
 
 const Navbar = () => {
@@ -9,7 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full py-5 flex items-center justify-center px-6">
+    <motion.header
+      className="w-full py-5 flex items-center justify-center px-6"
+      initial={{ opacity: 0, y: "-100vh" }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", duration: 0.5, delay: 0.4 }}
+    >
       <nav className="navbar container mx-auto h-[65px] flex items-center justify-between px-6 text-[#7c7c7c] font-semibold md:h-[80px]">
         <div>
           <img src={Logo} alt="logo" className="w-[50px] object-cover" />
@@ -76,7 +82,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 
