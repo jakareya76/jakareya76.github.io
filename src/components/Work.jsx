@@ -25,7 +25,7 @@ const Work = () => {
   return (
     <motion.div
       ref={ref}
-      className="flex items-center justify-center flex-col my-20"
+      className="flex items-center justify-center flex-col py-20 md:px-5"
       id="work"
       animate={animation}
     >

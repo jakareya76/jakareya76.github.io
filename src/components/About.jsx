@@ -30,7 +30,12 @@ const About = () => {
     });
   }, []);
   return (
-    <motion.div ref={ref} id="about" className="my-20" animate={animation}>
+    <motion.div
+      ref={ref}
+      id="about"
+      className="my-20 md:px-5"
+      animate={animation}
+    >
       <div className="flex items-center justify-between flex-col gap-5 lg:flex-row">
         <div className="flex flex-col items-center justify-center px-1 md:items-start">
           <h1 className="text-5xl font-aurore text-white font-semibold">

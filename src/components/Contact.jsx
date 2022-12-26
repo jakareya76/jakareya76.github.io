@@ -49,7 +49,7 @@ const Contact = () => {
     <motion.div
       ref={ref}
       id="contact"
-      className="flex items-center justify-center flex-col my-20"
+      className="flex items-center justify-center flex-col py-20 md:px-5"
       animate={animation}
     >
       <h1 className="text-center text-4xl font-aurore text-white py-10">

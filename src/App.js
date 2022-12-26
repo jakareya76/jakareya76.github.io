@@ -27,8 +27,8 @@ const App = () => {
         </div>
       </motion.section>
 
-      <main className="flex items-center justify-center flex-col px-2">
-        <div className="container mx-auto font-[Arimo] px-2">
+      <main className="flex items-center justify-center flex-col">
+        <div className="container mx-auto font-[Arimo] px-4">
           <Hero />
           <About />
           <Work />
