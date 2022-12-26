@@ -37,9 +37,9 @@ const About = () => {
             <span className="text-yellow-300">About</span> me!
           </h1>
           <p className="text-[#aeaeb1] text-justify my-5 max-w-2xl md:text-left">
-            Hi, I'm Jakareya, Full Stack Web Developer. With Over 3 YEARS Of
+            Hi, I'm Jakareya, Full Stack Web Developer. With Over 5 YEARS Of
             Experience. Since beginning my journey as a freelance Developer
-            nearly 3 years ago, I've done remote work for agencies, consulted
+            nearly 5 years ago, I've done remote work for agencies, consulted
             for startups, and collaborated with talented people to create
             digital products for both business and consumer use. I'm quietly
             confident, naturally curious, and perpetually working on improving
@@ -51,7 +51,7 @@ const About = () => {
           </p>
 
           <a
-            href="https://www.fiverr.com/riiote"
+            href="https://www.fiverr.com/jakareya608"
             rel="noreferrer"
             target="_blank"
             className=" border border-[#08fdd8] px-10 py-4  my-5 text-[#08fdd8] font-mono tracking-widest rounded-[2px] duration-500 hover:bg-[#08fdd8] hover:text-zinc-900"
@@ -60,13 +60,13 @@ const About = () => {
           </a>
         </div>
         <div className="flex">
-          <div className="xl:w-[450px] xl:h-[450px] flex items-center justify-center">
+          <div className="xl:w-[500px] xl:h-[500px] flex items-center justify-center">
             <div id="canvaContainer">
               <canvas
                 id="myCanva"
                 width="500px"
                 height="500px"
-                className="w-[280px] h-[280px] xl:w-[450px] xl:h-[450px] lg:w-[350px] lg:h-[350px] md:w-[300px] md:h-[300px]"
+                className="w-[280px] h-[280px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[550px] xl:h-[550px]"
               >
                 <ul id="tagList">
                   {Skills.map((curElem, idx) => {

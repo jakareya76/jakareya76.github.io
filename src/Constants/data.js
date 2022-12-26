@@ -62,6 +62,6 @@ export const Skills = [
   "Mongoose JS",
   "HTML",
   "SQL",
-  "CI/CD",
+  "WordPress",
   "Docker",
 ];
