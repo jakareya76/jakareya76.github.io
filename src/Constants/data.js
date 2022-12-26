@@ -8,18 +8,18 @@ import Weather from "../images/weather.png";
 export const WorkList = [
   {
     id: 0,
-    link: "https://jakareya76.github.io/hoobank-landing-page",
-    image: hoobank,
-  },
-  {
-    id: 1,
     link: "https://jakareya76.github.io/gpt3-landing-page",
     image: gpt3,
   },
   {
-    id: 2,
+    id: 1,
     link: "https://jakareya76.github.io/burger-restaurant/",
     image: Burger,
+  },
+  {
+    id: 2,
+    link: "https://jakareya76.github.io/hoobank-landing-page",
+    image: hoobank,
   },
   {
     id: 3,

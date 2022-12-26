@@ -15,8 +15,8 @@ const Hero = () => {
         </span>
         <motion.h1
           className="text-3xl text-white font-semibold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
-          initial={{ scale: 0.8 }}
-          animate={{ scale: 1, originX: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           Hi, <br /> I'm{" "}
