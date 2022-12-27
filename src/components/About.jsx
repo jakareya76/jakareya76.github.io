@@ -42,17 +42,23 @@ const About = () => {
             <span className="text-yellow-300">About</span> me!
           </h1>
           <p className="text-[#aeaeb1] text-justify my-5 max-w-2xl md:text-left">
-            Hi, I'm Jakareya, Full Stack Web Developer. With Over 5 YEARS Of
-            Experience. Since beginning my journey as a freelance Developer
-            nearly 5 years ago, I've done remote work for agencies, consulted
-            for startups, and collaborated with talented people to create
-            digital products for both business and consumer use. I'm quietly
-            confident, naturally curious, and perpetually working on improving
-            my skills.
-            <br />
-            <br />I like to code things from scratch, and enjoy bringing ideas
-            to life in the browser. I have been working on the technology like
-            React Js, Node Js, Express Js, MongoDB, And NextJs.
+            As a full stack web developer with over 5 years of experience, I
+            have a strong foundation in both front-end and back-end development
+            technologies. On the front-end, I have experience building
+            responsive and user-friendly interfaces using React, as well as
+            technologies such as HTML, CSS, and JavaScript as well as frameworks
+            such as React. I am skilled in implementing design systems and
+            following best practices for accessibility and performance. On the
+            back-end, I have experience working with Node.js and Express, as
+            well as databases such as MongoDB. I am familiar with common web
+            development frameworks and libraries, and have experience building
+            and deploying full-stack web applications using the MERN stack
+            Throughout my career, I have worked on a variety of projects ranging
+            from small websites to large-scale web applications, and have a
+            proven track record of delivering high-quality work on time and
+            within budget. I am a team player and thrive in collaborative
+            environments, and am always looking for opportunities to learn and
+            grow as a developer.
           </p>
 
           <a
