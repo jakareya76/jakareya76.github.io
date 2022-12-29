@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <motion.header
-      className="w-full py-5 flex items-center justify-center px-6"
+      className="w-full py-5 flex items-center justify-center px-6 fixed top-0 z-50"
       initial={{ opacity: 0, y: "-100vh" }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", duration: 0.5, delay: 0.4 }}
